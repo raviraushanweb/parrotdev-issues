@@ -1,0 +1,34 @@
+name: Feature Request
+description: Suggest an idea for ParrotDev
+title: "[Feature]: "
+labels: ["enhancement", "status: needs triage"]
+body:
+  - type: dropdown
+    id: extension
+    attributes:
+      label: Which extension does this apply to?
+      options:
+        - ParrotJS
+        - ParrotPython
+        - ParrotPHP
+        - General / All
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What are you trying to solve? Describe the use case or pain point.
+      placeholder: I'm trying to... but it's difficult because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How do you envision this working? Be as specific as you can.
+      placeholder: It would be great if the extension could...
+    validations:
+      required: true
